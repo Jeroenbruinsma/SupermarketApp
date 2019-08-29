@@ -4,4 +4,11 @@ body{
 .product{
     border-style: solid;
     border-width: 1px;
+    border-color: aqua;
+    margin: 10px;
+
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1px;
 }
