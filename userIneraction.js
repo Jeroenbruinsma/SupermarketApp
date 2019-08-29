@@ -14,11 +14,6 @@ function addComment(event){
     comment.appendChild(p)
     comment.appendChild(msg)
     commentsection.appendChild(comment)
-
-
-
-
-
 }
 
 const form = document.getElementsByTagName("form")
