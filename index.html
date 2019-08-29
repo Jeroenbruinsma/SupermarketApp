@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My supermarket app </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main class="main" id="mainContainer">
-            <h1>My supermarket app </h1>
-            <section id='products'>
-               
-                <!-- <div id='0' class="product">
+
+<head>
+    <title>My supermarket app </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main" id="mainContainer">
+        <h1>My supermarket app </h1>
+        <section id='products'>
+
+            <!-- <div id='0' class="product">
                     <p> apple</p>
                     <a href="apple.html">
                         <img src="https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg">
@@ -25,16 +27,36 @@
                     </div> -->
 
 
-            </section>
-        </main>
-        <footer>
-            <h2></h2>contact info in the footer</h2>
-        </footer>
+        </section>
+        <commentSection id='commentsection'>
+            <form >
+                <label> name </label>
+                <input id="name" type="text" value=''>
+                
+                <label> Message </label>
+                <input id='message' type="text" value=''>
 
-    <script src='data.js'></script>        
-    <script src='functions.js'></script>        
-    </body>
-    
+                <button onclick="submit">Send</button>
+
+
+            </form>
+
+
+        </commentSection>
+        
+
+    </main>
+
+    <footer>
+        <h2></h2>contact info in the footer</h2>
+    </footer>
+
+    <script src='data.js'></script>
+    <script src='functions.js'></script>
+    <script src='userIneraction.js'></script>
+
+</body>
+
 
 
 </html>

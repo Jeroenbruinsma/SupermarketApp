@@ -18,12 +18,12 @@ function setPrice(id, price) {
     product.style.backgroundColor = 'red'
     const pricetag = document.createElement('p')
     pricetag.innerHTML = price.toString()
-    pricetag.style.margin = '100px'
+    pricetag.style.margin = '5px'
     product.appendChild(pricetag)
 }
 
 function addProduct(product) {
-    console.log("Add a product called w:", product)
+    //console.log("Add a product called w:", product)
 
     const div = document.createElement("div")
     const pTag = document.createElement("p")
@@ -74,40 +74,35 @@ listOfProducts.forEach(function (item, index) {
         case "alcohol":
             discounted_item = item
             discounted_item.price = parseInt(item.price) * 1.75
-            console.log("price of item", discounted_item)
+            //console.log("price of item", discounted_item)
             addProduct(discounted_item)
             break;
         case "fresh":
             discounted_item = item
             discounted_item.price = parseInt(item.price) * 1.3
-            console.log("price of item", discounted_item)
-            addProduct(discounted_item)
+            //console.log("price of item", discounted_item)
+            //addProduct(discounted_item)
 
             break;
         case 'grocery':
             const scopingTest = "something else"
-            console.log("scopingtest ", scopingTest)
-
+            //console.log("scopingtest ", scopingTest)
+            
             discounted_item = item
             discounted_item.price = parseInt(item.price) * 0.95
-            console.log("price of item", discounted_item)
-            addProduct(discounted_item)
+            //console.log("price of item", discounted_item)
+            //addProduct(discounted_item)
             break;
         default:
             console.log('this product is of the default category ')
 
     }
-    console.log("scopingtest ", scopingTest)
+    //console.log("scopingtest ", scopingTest)
 
-    while(  listOfProducts.length >= 1  ){
-        
-         let product = listOfProducts.pop()
-         console.log("product", product.name)
-         console.log("length of my array",listOfProducts.length)
-
-     }
-
-
+    // while (listOfProducts.length >= 1) {
+    //     let product = listOfProducts.pop()
+    //     //console.log("product", product.name)
+    //     //console.log("length of my array", listOfProducts.length)
+    // }
 })
-
 
